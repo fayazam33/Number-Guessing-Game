@@ -1,3 +1,5 @@
+Netlify deploy link: fayazguessinggame.netlify.app
+
 # Number Guessing Game
  I use here Html , CSS  , Javascript.
  The rules for the game is-
