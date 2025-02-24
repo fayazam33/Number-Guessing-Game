@@ -1,5 +1,5 @@
 # Number Guessing Game
- I use here Html , Css  , Javascript.
+ I use here Html , CSS  , Javascript.
  The rules for the game is-
 
 **1.Start the Game:**
