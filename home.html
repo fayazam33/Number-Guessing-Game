@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎯 Number Guessing Game</h1>
+        <button id="start-btn" class="btn">Start Game</button>
+        <p id="pc-command"></p>
+        <div class="info">
+            <p>❤️ Lives: <span id="life">10</span></p>
+            <p>🎚 Level: <span id="level">1</span></p>
+            <p>⭐ Points: <span id="points">0</span></p>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <p>🔢 Guess a number between <span id="range">1-10</span>:</p>
+            <input type="number" id="guess" class="input" min="1" max="10">
+            <button class="btn" onclick="checkGuess()">Check</button>
+            <p id="message" class="message"></p>
+            <p>📜 Recent Guesses: <span id="recent-guesses"></span></p>
+            <button id="quit-btn" class="btn danger">Quit</button>
+        </div>
+    </div>
+
+    <div id="popup" class="modal">
+        <p id="popup-message"></p>
+        <button class="btn" onclick="closePopup()">OK</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

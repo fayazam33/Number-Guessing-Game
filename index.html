@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rules - Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Number Guessing Game! 🎮</h1>
+        <div class="rules">
+            <h2>Rules:</h2>
+            <ul>
+                <li>You have <b>10 lives</b> to guess the correct number.</li>
+                <li>If you guess correctly, you move to the next level! 🎉</li>
+                <li>Each level increases the difficulty (range expands!).</li>
+                <li>Guess too low? You'll get a hint! 🔽</li>
+                <li>Guess too high? You'll also get a hint! 🔼</li>
+                <li>Run out of lives? Game over! 😢</li>
+            </ul>
+        </div>
+        <button class="start-btn" onclick="startGame()">Start Game 🚀</button>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>

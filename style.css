@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d89ee6, #ff758c);
+    color: rgb(41, 41, 41);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.game-container {
+    background: rgba(250, 224, 224, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    animation: slideIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+
+.btn {
+    background: #00c9a7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #04bd9e;
+    transform: scale(1.1);
+}
+
+
+/* .danger {
+    background: #ff747f;
+}
+
+.danger:hover {
+    background: #e04352;
+} */
+
+
+.input {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #00c9a7;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    width: 50%;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.input:focus {
+    border-color: #ff7eb3;
+}
+
+
+.message {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.hidden {
+    display: none;
+  
+}
