@@ -88,7 +88,7 @@ function checkGuess() {
 
 function quitGame() {
     showPopup("You quit the game!\nYour final score: " + points + "\nLevel reached: " + level);
-    setTimeout(() => window.location.reload(), 3000);
+    setTimeout(() => window.location.reload(), 1000);
 }
 
 document.getElementById("start-btn").addEventListener("click", startGame);
